@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smartboldriver">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".SmartBOLDriver"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.">
+        <activity android:name=".View.BolListActivity"></activity>
+        <activity android:name=".View.PopupActivity" />
+        <activity android:name=".View.PODDetailsActivity" />
+        <activity android:name=".features.shipments.DelListActivity" />
+        <activity android:name=".features.shipments.ShipmentActivity" />
+        <activity android:name=".View.ViewImagesActivity" />
+        <activity android:name=".features.shipments.DelSignActivity" />
+        <activity android:name=".View.ScanActivity" />
+        <activity android:name=".View.PdfViewerActivity" />
+        <activity android:name=".View.PODBlankPageActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".features.checkinCheckout.DriverDetailsActivity" />
+        <activity android:name=".View.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".utils.BGService"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".View.SignActivity" />
+        <activity android:name=".View.QRScannerActivity" />
+        <activity android:name=".View.QRCodeScannerActivity" />
+        <activity android:name=".View.ActiveBOLActivity" />
+        <activity android:name=".View.CapturePODFormActivity" />
+        <activity android:name=".View.SignInActivity" />
+        <activity android:name=".View.ShipperInfoActivity" />
+        <activity android:name=".features.checkinCheckout.CheckinActivity" />
+        <activity android:name=".features.shipments.DeliveryListActivity" />
+        <activity android:name=".View.CarrierDetailsActivity" />
+        <activity android:name=".View.DetailsActivity" />
+        <activity android:name=".View.ConsigneeInfoActivity" />
+        <activity android:name=".features.BarcodeScanner" />
+        <activity android:name=".View.LoginNewActivity" />
+        <activity android:name=".View.LineItemsActivity" />
+        <activity android:name=".View.SettingsActivity" />
+        <activity android:name=".features.dashboard.DashBoardActivity" />
+        <activity android:name=".View.DriverSignupActivity" />
+        <activity android:name=".features.authentication.DeviceActivationActivity" />
+        <activity android:name=".features.authentication.RegistrationActivity" />
+        <activity android:name=".features.authentication.LoginActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

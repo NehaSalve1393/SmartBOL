@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sc5_rrot_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/sc5_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sc5_inner_cons_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/sc5_guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="25dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/sc5_guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="25dp" />
+
+            <TextView
+                android:id="@+id/add_item_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/add_item_str"
+                android:textColor="@color/screen_5_text_col"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/sc5_guideline2"
+                app:layout_constraintStart_toStartOf="@+id/sc5_guideline1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/quantity_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/quantity_str"
+                android:textColor="@color/screen_5_text_col"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/description_txt"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_item_txt" />
+
+            <TextView
+                android:id="@+id/description_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/description_str"
+                android:textColor="@color/screen_5_text_col"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sc5_guideline2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/quantity_txt"
+                app:layout_constraintTop_toBottomOf="@+id/add_item_txt" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/prototype_cell_background_col"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintEnd_toStartOf="@+id/sc5_guideline2"
+                app:layout_constraintStart_toStartOf="@+id/sc5_guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/quantity_txt" />
+
+            <TextView
+                android:id="@+id/prototype_cells_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prototype_cells_str"
+                android:textColor="@color/screen_5_text_col"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/sc5_guideline2"
+                app:layout_constraintHorizontal_bias="0.09"
+                app:layout_constraintStart_toStartOf="@+id/sc5_guideline1"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/units_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/units_str"
+                android:textColor="@color/screen_5_text_col"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/units_value1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/units_value1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/description_str"
+                android:textColor="@color/screen_5_text_col"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sc5_guideline2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/units_txt"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/unite_valute2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/description_str"
+                android:textColor="@color/screen_5_text_col"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/units_value1"
+                app:layout_constraintStart_toStartOf="@+id/units_value1"
+                app:layout_constraintTop_toBottomOf="@+id/units_value1" />
+
+            <TextView
+                android:id="@+id/type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/type_str"
+                android:textColor="@color/screen_5_text_col"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/typr_value"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/unite_valute2" />
+
+            <TextView
+                android:id="@+id/typr_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/units_description_str"
+                android:textColor="@color/screen_5_text_col"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sc5_guideline2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/type_txt"
+                app:layout_constraintTop_toBottomOf="@+id/unite_valute2" />
+
+            <ImageView
+                android:id="@+id/blank_img"
+                android:layout_width="0dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="20dp"
+                android:background="#bbbbbb"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintEnd_toStartOf="@+id/sc5_guideline2"
+                app:layout_constraintStart_toStartOf="@+id/sc5_guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/type_txt" />
+
+            <TextView
+                android:id="@+id/back_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/back_str"
+                android:textColor="@color/screen_5_text_col"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/generate_bol_txt"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blank_img" />
+
+            <TextView
+                android:id="@+id/generate_bol_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/generate_bol_str"
+                android:textColor="@color/screen_5_text_col"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sc5_guideline2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/back_text"
+                app:layout_constraintTop_toBottomOf="@+id/blank_img"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

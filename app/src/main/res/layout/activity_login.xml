@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.authentication.LoginActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/img_logo"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/solmartb_logo1"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/testlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="*** TEST ENVIRONMENT ***"
+        android:textColor="@color/colorAccent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="@id/img_logo"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/evice_id_edt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="25dp"
+            android:inputType="text"
+            android:textSize="15sp"
+           >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/device_id_edt_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/userid"
+                android:textColor="@color/login_edit_text_col"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activation_code_edt_layout"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activation_code_edt_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:password="true"
+                android:inputType="textPassword"
+                android:textColor="@color/login_edit_text_col"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_border"
+        android:gravity="center"
+        android:text="@string/login"></Button>
+
+
+
+
+    <Button
+        android:id="@+id/txt_registration"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_border"
+        android:text="@string/new_registration"/>
+    <Button
+        android:id="@+id/txt_device_activation"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_border"
+        android:text="@string/device_activation"/>
+
+
+        <ProgressBar
+            android:id="@+id/pbLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="1000dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center|center_vertical"
+            android:minWidth="50dp" />
+    </LinearLayout>
+</RelativeLayout>

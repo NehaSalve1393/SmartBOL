@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003656</color>
+    <color name="colorPrimaryDark">#1F4E7A</color>
+    <color name="colorAccent">#003656</color>
+    <color name="screen_3_txt_col">#000000</color>
+    <color name="icon_col">#000000</color>
+    <color name="gray">#99E8E6E6</color>
+    <color name="arrow_col">#2196F3</color>
+    <color name="box_background_col">#A9C8CD</color>
+    <color name="text_col">#FFFFFF</color>
+    <color name="cell_txt_col">#000000</color>
+    <color name="cell_background_col">#E6E6E6</color>
+    <color name="frm_txt_col">#9C9C9C</color>
+    <color name="spl_instruct_col">#FFC107</color>
+    <color name="icons_txt_col">#2196F3</color>
+    <color name="list_txt_col">#353030</color>
+    <color name="prototype_cell_txt_col">#000000</color>
+    <color name="prototype_cell_background_col">#E6E6E6</color>
+    <color name="screen_5_text_col">#000000</color>
+    <color name="text_env_col">#EC1906</color>
+    <color name="scan_code_col">#000000</color>
+    <color name="or_col">#000000</color>
+    <color name="login_col">#2196F3</color>
+    <color name="login_edit_text_col">#000000</color>
+    <color name="screen_7_text_col">#000000</color>
+    <color name="screen_8_text_col">#000000</color>
+    <color name="screen_9_text_col">#000000</color>
+    <color name="color1">#003656</color>
+    <color name="color2">#1F4E7A</color>
+    <color name="color3">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+</resources>

@@ -1,0 +1,3 @@
+include ':app',':scanlibrary'
+include ':openCVLibrary346'
+rootProject.name = "SmartBOLDriver"
